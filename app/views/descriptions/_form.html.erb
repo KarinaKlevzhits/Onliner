@@ -1,0 +1,248 @@
+<%= form_with(model: description) do |form| %>
+  <% if description.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(description.errors.count, "error") %> prohibited this description from being saved:</h2>
+
+      <ul>
+        <% description.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :company %>
+    <%= form.text_field :company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :shop %>
+    <%= form.text_field :shop %>
+  </div>
+
+  <div class="field">
+    <%= form.label :in_stock %>
+    <%= form.check_box :in_stock %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_pc %>
+    <%= form.text_field :type_pc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :appointment %>
+    <%= form.text_field :appointment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :processor %>
+    <%= form.text_field :processor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cores %>
+    <%= form.number_field :cores %>
+  </div>
+
+  <div class="field">
+    <%= form.label :clock_frequency %>
+    <%= form.text_field :clock_frequency %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_memory %>
+    <%= form.text_field :type_memory %>
+  </div>
+
+  <div class="field">
+    <%= form.label :value_ram %>
+    <%= form.number_field :value_ram %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_disk %>
+    <%= form.text_field :type_disk %>
+  </div>
+
+  <div class="field">
+    <%= form.label :capasity_disc %>
+    <%= form.number_field :capasity_disc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :odd %>
+    <%= form.check_box :odd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cardrider %>
+    <%= form.check_box :cardrider %>
+  </div>
+
+  <div class="field">
+    <%= form.label :discrete_graphichs %>
+    <%= form.check_box :discrete_graphichs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :graphics_card %>
+    <%= form.text_field :graphics_card %>
+  </div>
+
+  <div class="field">
+    <%= form.label :power_unit %>
+    <%= form.number_field :power_unit %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_field :color %>
+  </div>
+
+  <div class="field">
+    <%= form.label :operating_system %>
+    <%= form.text_field :operating_system %>
+  </div>
+
+  <div class="field">
+    <%= form.label :monitor_included %>
+    <%= form.check_box :monitor_included %>
+  </div>
+
+  <div class="field">
+    <%= form.label :keyboard_included %>
+    <%= form.check_box :keyboard_included %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mouse_included %>
+    <%= form.check_box :mouse_included %>
+  </div>
+
+  <div class="field">
+    <%= form.label :year %>
+    <%= form.number_field :year %>
+  </div>
+
+  <div class="field">
+    <%= form.label :model_processor %>
+    <%= form.text_field :model_processor %>
+  </div>
+
+
+  <div class="field">
+    <%= form.label :keyboard_light %>
+    <%= form.check_box :keyboard_light %>
+  </div>
+
+  <div class="field">
+    <%= form.label :width %>
+    <%= form.text_field :width %>
+  </div>
+
+  <div class="field">
+    <%= form.label :high %>
+    <%= form.text_field :high %>
+  </div>
+
+  <div class="field">
+    <%= form.label :depth %>
+    <%= form.text_field :depth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max_ram %>
+    <%= form.number_field :max_ram %>
+  </div>
+
+  <div class="field">
+    <%= form.label :value_slots %>
+    <%= form.number_field :value_slots %>
+  </div>
+
+  <div class="field">
+    <%= form.label :frequency_ram %>
+    <%= form.number_field :frequency_ram %>
+  </div>
+
+  <div class="field">
+    <%= form.label :formFactor %>
+    <%= form.text_field :formFactor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rotationalSpeed %>
+    <%= form.number_field :rotationalSpeed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :video_memory %>
+    <%= form.number_field :video_memory %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bluetooth %>
+    <%= form.check_box :bluetooth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lan %>
+    <%= form.check_box :lan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wifi %>
+    <%= form.check_box :wifi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type_usb %>
+    <%= form.check_box :type_usb %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dvi %>
+    <%= form.check_box :dvi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hdmi %>
+    <%= form.check_box :hdmi %>
+  </div>
+
+  <div class="field">
+    <%= form.label :display_port %>
+    <%= form.check_box :display_port %>
+  </div>
+
+  <div class="field">
+    <%= form.label :audio_input %>
+    <%= form.check_box :audio_input %>
+  </div>
+
+  div class="field">
+    <%= form.label :audio_output %>
+    <%= form.check_box :audio_output %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

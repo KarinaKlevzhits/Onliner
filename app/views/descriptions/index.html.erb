@@ -1,0 +1,115 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Descriptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Company</th>
+      <th>Price</th>
+      <th>Shop</th>
+      <th>Instock</th>
+      <th>type_pc</th>
+      <th>Appointment</th>
+      <th>Processor</th>
+      <th>Cores</th>
+      <th>clock_frequency</th>
+      <th>type_memory</th>
+      <th>value_ram</th>
+      <th>type_disk</th>
+      <th>capasity_disc</th>
+      <th>odd</th>
+      <th>Cardrider</th>
+      <th>discrete_graphichs</th>
+      <th>graphics_card</th>
+      <th>power_unit</th>
+      <th>Color</th>
+      <th>operating_system</th>
+      <th>monitor_included</th>
+      <th>keyboard_included</th>
+      <th>mouse_included</th>
+      <th>Year</th>
+      <th>model_processor</th>
+      <th>keyboard_light</th>
+      <th>Width</th>
+      <th>High</th>
+      <th>Depth</th>
+      <th>Weight</th>
+      <th>max_ram</th>
+      <th>value_slots</th>
+      <th>frequency_ram</th>
+      <th>Formfactor</th>
+      <th>Rotationalspeed</th>
+      <th>video_memory</th>
+      <th>Bluetooth</th>
+      <th>lan</th>
+      <th>Wifi</th>
+      <th>type_usb</th>
+      <th>Dvi</th>
+      <th>Hdmi</th>
+      <th>display_port</th>
+      <th>audio_input</th>
+      <th>audio_output</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @descriptions.each do |description| %>
+      <tr>
+        <td><%= description.name %></td>
+        <td><%= description.company %></td>
+        <td><%= description.price %></td>
+        <td><%= description.shop %></td>
+        <td><%= description.in_stock %></td>
+        <td><%= description.type_pc %></td>
+        <td><%= description.appointment %></td>
+        <td><%= description.processor %></td>
+        <td><%= description.cores %></td>
+        <td><%= description.clock_frequency %></td>
+        <td><%= description.type_memory %></td>
+        <td><%= description.value_ram %></td>
+        <td><%= description.type_disk %></td>
+        <td><%= description.capasity_disc %></td>
+        <td><%= description.odd %></td>
+        <td><%= description.cardrider %></td>
+        <td><%= description.discrete_graphichs %></td>
+        <td><%= description.graphics_card %></td>
+        <td><%= description.power_unit %></td>
+        <td><%= description.color %></td>
+        <td><%= description.operating_system %></td>
+        <td><%= description.monitor_included %></td>
+        <td><%= description.keyboard_included %></td>
+        <td><%= description.mouse_included %></td>
+        <td><%= description.year %></td>
+        <td><%= description.model_processor %></td>
+        <td><%= description.keyboard_light %></td>
+        <td><%= description.width %></td>
+        <td><%= description.high %></td>
+        <td><%= description.depth %></td>
+        <td><%= description.weight %></td>
+        <td><%= description.max_ram %></td>
+        <td><%= description.value_slots %></td>
+        <td><%= description.frequency_ram %></td>
+        <td><%= description.video_memory %></td>
+        <td><%= description.bluetooth %></td>
+        <td><%= description.lan %></td>
+        <td><%= description.wifi %></td>
+        <td><%= description.type_usb %></td>
+        <td><%= description.dvi %></td>
+        <td><%= description.hdmi %></td>
+        <td><%= description.display_port %></td>
+        <td><%= description.audio_input %></td>
+        <td><%= description.audio_output %></td>
+        <td><%= link_to 'Show', description %></td>
+        <td><%= link_to 'Edit', edit_description_path(description) %></td>
+        <td><%= link_to 'Destroy', description, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Description', new_description_path %>
